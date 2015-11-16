@@ -1,16 +1,38 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Engineapp</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
-
-<%= link_to "Home", main_app.root_path %> | <%= link_to "Kitties", foo_bar.kitties_path %> | <%= link_to "Blorgh", blorgh.articles_path %> | <%= link_to "User Signin", blorgh.new_user_session_path %>
-
-<%= yield %>
-
-</body>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lfapp</title>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
+  </head>
+  <body>
+    <div class="navbar navbar-default navbar-static-top">
+        <div class="container">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">Lfapp</a>
+          <div class="navbar-collapse collapse navbar-responsive-collapse">
+            <ul class="nav navbar-nav">
+              <li><%= link_to "Main Home", main_app.root_path %></li>
+              <li><%= link_to "Kitties", foo_bar.kitties_path  %></li>
+              <li><%= link_to "User Signin", blorgh.new_user_session_path  %></li>
+            </ul>
+          </div>
+        </div>
+     </div>
+     <div class="container">
+       <div class="row">
+          <div class="col-md-12">
+	         <%= yield %>
+          </div>
+       </div><!--/row-->
+     </div>
+  </body>
 </html>
