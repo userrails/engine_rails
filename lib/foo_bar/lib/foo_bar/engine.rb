@@ -14,11 +14,11 @@ module FooBar
     end
 
     #This is useful when we want to load some other files like app/services, app/workers, etc automatically which is inside lib/foobar.rb
-    initializer "foo_bar", after: :load_config_initializers do |app|
-      FooBar.load_files.each { |file|
-        require_relative File.join("../..", file)
-      }
-    end
+    # initializer "foo_bar", after: :load_config_initializers do |app|
+    #   FooBar.load_files.each { |file|
+    #     require_relative File.join("../..", file)
+    #   }
+    # end
     
   end
 end
