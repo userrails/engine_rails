@@ -1,3 +1,4 @@
+require 'devise'
 module Blorgh
   class Engine < ::Rails::Engine
     isolate_namespace Blorgh
@@ -12,5 +13,9 @@ module Blorgh
          Rails.application.config.paths["db/migrate"] << expanded_path
       end
     end
+
+    config.to_prepare do
+         Devise::SessionsController.layout "application"
+       end
   end
 end
