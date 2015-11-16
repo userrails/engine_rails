@@ -45,3 +45,4 @@ group :development do
   gem 'spring'
 end
 
+gem 'foo_bar', path: 'lib/foo_bar'

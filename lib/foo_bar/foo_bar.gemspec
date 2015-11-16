@@ -9,9 +9,9 @@ Gem::Specification.new do |s|
   s.version     = FooBar::VERSION
   s.authors     = ["Shiv Raj Badu"]
   s.email       = ["shivrajbadu@gmail.com"]
-  s.homepage    = "TODO"
-  s.summary     = "TODO: Summary of FooBar."
-  s.description = "TODO: Description of FooBar."
+  s.homepage    = "http://localhost:3000"
+  s.summary     = "Summary of FooBar."
+  s.description = "Description of FooBar."
   s.license     = "MIT"
 
   s.files = Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.rdoc"]
