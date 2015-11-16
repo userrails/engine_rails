@@ -2,6 +2,7 @@ require_dependency "blorgh/application_controller"
 
 module Blorgh
   class ArticlesController < ApplicationController
+    layout 'application'
     before_action :set_article, only: [:show, :edit, :update, :destroy]
 
     # GET /articles

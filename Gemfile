@@ -45,5 +45,5 @@ group :development do
   gem 'spring'
 end
 
-gem 'foo_bar', path: 'lib/foo_bar'
+gem 'foo_bar', path: 'lib/engines/foo_bar'
 gem 'blorgh', path: 'lib/engines/blorgh'

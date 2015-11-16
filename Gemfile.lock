@@ -7,7 +7,7 @@ PATH
       rails (~> 4.2.4)
 
 PATH
-  remote: lib/foo_bar
+  remote: lib/engines/foo_bar
   specs:
     foo_bar (0.0.1)
       rails (~> 4.2.4)
