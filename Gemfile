@@ -46,3 +46,4 @@ group :development do
 end
 
 gem 'foo_bar', path: 'lib/foo_bar'
+gem 'blorgh', path: 'lib/engines/blorgh'

@@ -1,4 +1,10 @@
 PATH
+  remote: lib/engines/blorgh
+  specs:
+    blorgh (0.0.1)
+      rails (~> 4.2.4)
+
+PATH
   remote: lib/foo_bar
   specs:
     foo_bar (0.0.1)
@@ -145,6 +151,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  blorgh!
   byebug
   coffee-rails (~> 4.1.0)
   foo_bar!
